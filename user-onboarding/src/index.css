@@ -1,0 +1,112 @@
+body {
+  background-color: blueviolet;
+  color: bold black;
+}
+html {
+  font-size: 75%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+  font-size: 1.4rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin: 5px 0 0;
+  display: block;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  background-color: rgb(184, 155, 229);
+}
+select {
+  height: 50px;
+  width: 325px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #751ee7;
+}
+
+input:focus {
+  outline: none;
+  border-color: #751ee7;
+}
+
+input:placeholder {
+  color: #c18ccc;
+}
+
+button {
+  width: 150px;
+  display: inline-block;
+  padding: 8px 11px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  outline: none;
+  background-color: #3b188d;
+  background-image: linear-gradient(to right, #4d57e1, #751ee7);
+  color: rgb(14, 13, 13);
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-image: none;
+  background-color: rebeccapurple;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+  background-image: none;
+  background-color: rgb(202, 82, 166);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 2.2rem;
+  color: rgb(100, 12, 12);
+}
+
+.terms {
+  display: inline-block;
+  align-self: self-start;
+}
+
+.terms input {
+  width: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+pre {
+  font-size: 1.9rem;
+}
